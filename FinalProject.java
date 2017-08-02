@@ -67,6 +67,5 @@ public class FinalProject2 extends JFrame
 		
 	  }
 	
-	//http://www.java2s.com/Code/Java/SWT-JFace-Eclipse/MouseMoveListenerExample.htm
 	}
 
