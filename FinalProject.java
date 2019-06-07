@@ -1,5 +1,4 @@
-//Andrew Hirschler
-
+//Andrew H
 import javax.swing.JApplet;
 import java.awt.*;
 import java.awt.Graphics;
@@ -9,10 +8,8 @@ import java.awt.Color;
 import java.awt.AWTException;
 import javax.swing.*;
 
-
 public class FinalProject2 extends JFrame
 {
-
 	public static void main (String [] args)
 	{
 		//JFrame f = new JFrame("RGB");
@@ -30,10 +27,8 @@ public class FinalProject2 extends JFrame
 		{
 				e.printStackTrace();
 		}
-		
 		try
-		{
-								
+		{			
 				Robot robot = new Robot();
 				f.setVisible(true);
 				JPanel panel = new JPanel ();
@@ -50,22 +45,18 @@ public class FinalProject2 extends JFrame
 				color = robot.getPixelColor(x, y);
 	
 				//JLabel label = new JLabel("RGB is " + color.getRed() +" "+ color.getGreen() +" "+ color.getBlue());
-				
+		
 				f.add(panel, BorderLayout.CENTER);
 				//panel.add(label, BorderLayout.CENTER);
 				panel.setBackground(color);
 				String s = color.getRed() + ", " +color.getGreen() + ", " +color.getBlue();
-   			System.out.println(s);
-				
+   			System.out.println(s);		
 		      }
 		}
 		catch (AWTException e) 
 		{
 			e.printStackTrace();
 				
-		}
-		
-	  }
-	
+		}	
+	  }	
 	}
-
